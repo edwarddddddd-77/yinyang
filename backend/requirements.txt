@@ -1,0 +1,5 @@
+fastapi==0.127.0
+uvicorn==0.40.0
+lunar-python==1.4.8
+openai==2.14.0
+pydantic==2.12.5

@@ -1,0 +1,16 @@
+[Unit]
+Description=YinYang Backend API Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/yinyang/backend
+ExecStart=/home/ubuntu/yinyang/start_backend.sh
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/yinyang-backend.log
+StandardError=append:/var/log/yinyang-backend.log
+
+[Install]
+WantedBy=multi-user.target
